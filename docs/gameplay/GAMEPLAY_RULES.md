@@ -1,7 +1,5 @@
 # GAMEPLAY RULES & PROGRESSION
 
-> Owner: A — Game & Gameplay Lead
-
 ## 1. Purpose
 
 Converts the Gameplay State Machine into explicit,
