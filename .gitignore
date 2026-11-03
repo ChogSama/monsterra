@@ -1,0 +1,18 @@
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Java build output
+target/
+
+# IDE files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
