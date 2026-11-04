@@ -1,18 +1,59 @@
-# SQLite databases
+### OS files
+# Windows
+Thumbs.db
+Desktop.ini
+$Recycle.Bin
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.directory
+.Trash-*
+
+### IDE-specific files
+# Visual Studio Code
+.vscode/
+
+# Intellij IDEA
+.idea/          # IntelliJ IDEA project files
+*.iml           # IntelliJ IDEA module files
+*.iws           # IntelliJ IDEA workspace files
+*.ipr           # IntelliJ IDEA project files
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.factorypath
+
+### Programming language
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+### Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+.mvn/timing.properties
+
+### SQLite databases
 *.db
 *.sqlite
 *.sqlite3
-
-# Java build output
-target/
-
-# IDE files
-.idea/
-*.iml
-.classpath
-.project
-.settings/
-
-# OS files
-.DS_Store
-Thumbs.db
+*.db-journal
+*.db-wal
+*.db-shm
