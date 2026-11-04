@@ -2,14 +2,14 @@
 # Windows
 Thumbs.db
 Desktop.ini
-$Recycle.Bin
+$Recycle.Bin/
 
 # macOS
 .DS_Store
 .AppleDouble
 .LSOverride
-.Spotlight-V100
-.Trashes
+.Spotlight-V100/
+.Trashes/
 
 # Linux
 *~
@@ -18,13 +18,15 @@ $Recycle.Bin
 
 ### IDE-specific files
 # Visual Studio Code
-.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
 
-# Intellij IDEA
-.idea/          # IntelliJ IDEA project files
-*.iml           # IntelliJ IDEA module files
-*.iws           # IntelliJ IDEA workspace files
-*.ipr           # IntelliJ IDEA project files
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
 out/
 
 # Eclipse
@@ -33,9 +35,10 @@ out/
 .settings/
 .factorypath
 
-### Programming language
-# Java
+### Java
 *.class
+
+# Build artifacts
 *.jar
 *.war
 *.ear
@@ -50,6 +53,10 @@ release.properties
 dependency-reduced-pom.xml
 .mvn/timing.properties
 
+### Gradle
+.gradle/
+build/
+
 ### SQLite databases
 *.db
 *.sqlite
@@ -57,3 +64,27 @@ dependency-reduced-pom.xml
 *.db-journal
 *.db-wal
 *.db-shm
+
+### Environment and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+### Logs
+*.log
+logs/
+
+### Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+### Test and coverage reports
+coverage/
+*.exec
+
+### Runtime files
+*.pid
