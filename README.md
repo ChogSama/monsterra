@@ -1,4 +1,3 @@
-
 # MONSTERRA — Monster Battle RPG
 
 A single-player monster battle RPG developed using Java, JavaFX, Maven, and SQLite.
@@ -7,7 +6,7 @@ A single-player monster battle RPG developed using Java, JavaFX, Maven, and SQLi
 
 - Java 21
 - JavaFX 21
-- Maven
+- Maven provided through the Maven Wrapper
 - SQLite
 - JUnit 5
 - JDBC
@@ -15,7 +14,7 @@ A single-player monster battle RPG developed using Java, JavaFX, Maven, and SQLi
 ## Prerequisites
 
 - JDK 21
-- Apache Maven
+- Maven is provided through the Maven Wrapper; no separate Maven installation is needed.
 - JavaFX dependencies are managed by Maven.
 
 Verify installation:
@@ -23,7 +22,20 @@ Verify installation:
 ```bash
 java -version
 javac -version
-mvn -version
+```
+
+Verify the Maven Wrapper:
+
+PowerShell (Windows):
+
+```powershell
+.\mvnw.cmd -version
+```
+
+macOS/Linux:
+
+```bash
+./mvnw -version
 ```
 
 ## Project Structure
@@ -54,34 +66,38 @@ MONSTERRA/
 
 ## Build and Run
 
-Clean previous build:
+Run the commands from the project root. The Maven Wrapper (`mvnw`) runs the Maven version configured for this project; it may download Maven the first time you use it. You do not need to install Maven separately.
 
-```bash
-mvn clean
+Choose a command based on what you want to do; you do not need to run all of them every time:
+
+| Goal | What it does |
+|---|---|
+| `clean` | Removes files from the previous build. |
+| `compile` | Compiles the application source code. |
+| `test` | Compiles the code and runs automated tests. |
+| `package` | Builds the application package, including compiling and running tests. |
+| `javafx:run` | Starts the JavaFX application. |
+
+For example, use `test` to check your changes or `javafx:run` to launch the game.
+
+PowerShell (Windows):
+
+```powershell
+.\mvnw.cmd clean
+.\mvnw.cmd compile
+.\mvnw.cmd test
+.\mvnw.cmd package
+.\mvnw.cmd javafx:run
 ```
 
-Compile:
+macOS/Linux:
 
 ```bash
-mvn compile
-```
-
-Run tests:
-
-```bash
-mvn test
-```
-
-Package:
-
-```bash
-mvn package
-```
-
-Run JavaFX application:
-
-```bash
-mvn javafx:run
+./mvnw clean
+./mvnw compile
+./mvnw test
+./mvnw package
+./mvnw javafx:run
 ```
 
 ## Team Development
