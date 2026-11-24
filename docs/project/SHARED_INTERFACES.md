@@ -885,11 +885,22 @@ The following is the baseline `pom.xml`.
 
 Run the following commands from the project root:
 
+PowerShell (Windows):
+
+```powershell
+.\mvnw.cmd clean
+.\mvnw.cmd test
+.\mvnw.cmd package
+.\mvnw.cmd javafx:run
+```
+
+macOS/Linux:
+
 ```bash
-mvn clean
-mvn test
-mvn package
-mvn javafx:run
+./mvnw clean
+./mvnw test
+./mvnw package
+./mvnw javafx:run
 ```
 
 The project must compile successfully before feature implementation begins.
